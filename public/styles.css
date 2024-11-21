@@ -1,0 +1,165 @@
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+    color: #333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+#auth-forms {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 300px;
+    text-align: center;
+}
+
+#auth-forms input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+#register-btn {
+    background-color: #28a745;
+}
+
+#register-btn:hover {
+    background-color: #125621;
+}
+
+#login-btn {
+    background-color:#007bff;
+}
+
+#login-btn:hover {
+    background-color: #0056b3; 
+}
+
+#auth-forms button {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: none;
+    border-radius: 4px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+
+#notes-section {
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#note-content {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    min-height: 80px;
+    resize: vertical;
+}
+
+#create-note {
+    background-color: #c65656;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#create-note:hover {
+    background-color: #d47a45;
+}
+
+
+#notes-list {
+    margin: 20px 0;
+}
+
+#notes-list div {
+    background: #f8f9fa;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#notes-list p {
+    margin: 0;
+    font-size: 14px;
+    color: #333;
+    flex: 1;
+}
+
+#notes-list button {
+    background-color: #ffc107;
+    border: none;
+    color: white;
+    padding: 5px 10px;
+    margin-left: 5px;
+    border-radius: 4px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#notes-list button.delete-note {
+    background-color: #dc3545;
+}
+
+#notes-list button:hover {
+    opacity: 0.9;
+}
+
+
+#logout-btn {
+    background-color: #343a40;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#logout-btn:hover {
+    background-color: #23272b;
+}
+
+
+@media (max-width: 768px) {
+    #auth-forms,
+    #notes-section {
+        width: 90%;
+    }
+}
